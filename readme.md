@@ -17,3 +17,17 @@ T_USER
 | --- | --- |
 | 1 | yyq |
 | 2 | yyq2 |
+
+# 项目结构
+![img.png](img.png)
+- .src/main/java/com/winnie 代码路径
+- .src/main/java/com/winnie/biz 业务目录（按业务拆包）
+- .src/main/java/com/winnie/common 公共模块，如工具类等
+- .src/main/resources 配置文件
+
+# 如何使用本项目
+1. 初始化数据库，例如数据库名称为testdb
+2. 执行脚本reousrces/init.sql，自动建表
+3. 修改resources/application.yml的数据库配置
+4. 以debug模式启动服务，com.winnie.Application
+5. 参考resources/unittest.txt手册，根据测试api进行代码走读
